@@ -1,0 +1,155 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #cf72e8;
+  color: #333;
+}
+
+header .hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-image {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  width: 200px;
+  height: 200px;
+  z-index: 2;
+}
+
+nav {
+  background-color: #253163;
+  padding: 10px;
+  text-align: center;
+  border: #253163 2px solid;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.stories {
+  background-image: url('assets/gifstories-bg.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+  color: white;
+  margin: 0;
+}
+
+.section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #253163;
+}
+
+/* Cards Responsive Layout */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Hero Background */
+.gif-background {
+  background-image: url('assets/ISLAM IS THE BEST RELIGION.gif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Footer */
+footer a:hover {
+  color: #ffd700;
+  transition: 0.3s ease;
+}
+
+.author {
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    width: 120px;
+    height: 120px;
+    bottom: 5px;
+    right: 10px;
+  }
+
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .section h3 {
+    font-size: 24px;
+  }
+
+  footer .text-md-start, footer .text-md-end {
+    text-align: center !important;
+  }
+
+  .footer-icons a {
+    margin: 0 8px;
+    font-size: 22px;
+  }
+}
+
